@@ -23,4 +23,4 @@ gulp.task('default', function() {
     .pipe(rename(themeName + '.min.js'))          
     .pipe(gulp.dest('./assets/js/'));
   
-});
+}); 
