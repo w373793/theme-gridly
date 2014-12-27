@@ -44,18 +44,7 @@
           <div class="logo">
             <h1><a href="/" rel="home">{{ site.name }}</a></h1>
           </div>
-          <nav id="nav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              {% if pages %}
-              {% for page in pages %}
-              <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
-              {% endfor %}
-              {% endif %}
-            </ul>
-          </nav>
-        </div>
-        <div class="search">
+          <div class="search">
  <script>
   (function() {
     var cx = '012678230877123824598:zuqhycwol34';
@@ -70,6 +59,17 @@
 </script>
 <gcse:searchbox-only></gcse:searchbox-only>
             </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              {% if pages %}
+              {% for page in pages %}
+              <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+              {% endfor %}
+              {% endif %}
+            </ul>
+          </nav>
+        </div>
         <div class="social-icons">
           <ul>
             {% if site.twitter %}
